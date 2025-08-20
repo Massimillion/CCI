@@ -819,3 +819,31 @@ html {
     opacity: 1;
     transform: translateY(0);
 }
+/* ... existing code ... */
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-image {
+    height: 50px;
+    width: auto;
+}
+
+.logo-text {
+    color: var(--dark-green);
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin: 0; /* Remove default margin */
+}
+
+/* Hide text on very small screens */
+@media (max-width: 480px) {
+    .logo-text {
+        display: none;
+    }
+}
+
+/* ... existing code ... */
